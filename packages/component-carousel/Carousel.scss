@@ -1,0 +1,39 @@
+.v-carousel {
+  background: #845ada;
+  background: linear-gradient(45deg, #845ada 33%, #b48ad8 99%);
+  height: 33.15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    border-radius: 6px;
+    background-color: white;
+    min-width: 36rem;
+    min-height: 21rem;
+    padding: 52px 60px;
+
+    &:first-child {
+      margin: 0 auto;
+    }
+
+    &__vendor {}
+
+    &__card-number {
+      font-size: 2rem;
+    }
+
+    &__expiry {
+      font-size: 1rem;
+    }
+  }
+
+  &--md {
+    width: 200px;
+  }
+
+  &--lg {
+    width: 300px;
+  }
+}

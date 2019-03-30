@@ -3,6 +3,7 @@ import { func, oneOf } from "prop-types";
 import classnames from "classnames";
 
 import IconMenu from "./icons/IconMenu";
+import IconSettings from "./icons/IconSettings";
 
 export const iconColors = {
   DEFAULT: "default",
@@ -18,7 +19,8 @@ export const iconSizes = {
 };
 
 export const icons = {
-  MENU: IconMenu
+  MENU: IconMenu,
+  SETTINGS: IconSettings
 };
 
 const Icon = ({ color, component, size, className, ...otherProps }) => {

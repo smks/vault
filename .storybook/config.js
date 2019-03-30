@@ -14,8 +14,12 @@ function loadStories() {
   // Atoms
   require("../packages/component-logo/stories");
   require("../packages/component-icon/stories");
-  //Molecules
+  // Molecules
+  require("../packages/component-carousel/stories");
   require("../packages/component-navigation/stories");
+
+  // Pages
+  require("../atomic-design/pages/example");
 }
 
 configure(loadStories, module);
