@@ -2,6 +2,9 @@
   border-bottom: 6px solid #7152b0;
   height: 10.625rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &__left-item {
     padding-left: 3rem;
