@@ -1,6 +1,6 @@
 import React from "react";
-import moneysafeLogo from "./logos/moneysafe.svg";
 import "./Logo.scss";
+import moneysafeLogo from "./assets/moneysafe.svg";
 
 export const logoSizes = {
   SM: "sm",
@@ -8,12 +8,19 @@ export const logoSizes = {
   LG: "lg"
 };
 
-export const Logo = ({ size }) => (
-  <div className="msb-logo-container">
-    <img
-      className={`msb-logo msb-logo--${size}`}
-      alt="Logo"
-      src={moneysafeLogo}
-    />
-  </div>
+export const assets = {
+  MONEYSAFE: moneysafeLogo
+};
+
+const COMPONENT_CLASS = "v-logo";
+
+export const Logo = ({ size, asset, ...otherProps }) => (
+  <img
+    className={`${COMPONENT_CLASS} ${COMPONENT_CLASS}--${size}`}
+    alt="Logo"
+    src={asset}
+    {...otherProps}
+  />
 );
+
+export default Logo;

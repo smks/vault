@@ -1,0 +1,24 @@
+.v-icon {
+  height: 60px;
+  width: auto;
+
+  &--color-default {
+    fill: #000000;
+  }
+
+  &--color-light {
+    fill: #514e48;
+  }
+
+  &--color-inverse {
+    fill: white;
+  }
+
+  &--md {
+    width: 200px;
+  }
+
+  &--lg {
+    width: 300px;
+  }
+}

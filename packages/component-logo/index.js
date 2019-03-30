@@ -1,5 +1,5 @@
-import Logo from "./Logo";
+import Logo, { logoSizes, assets } from "./Logo";
 
-import { moneysafeLogo } from "./logos/moneysafe.svg";
+export { logoSizes, assets };
 
-export { Logo, moneysafeLogo };
+export default Logo;

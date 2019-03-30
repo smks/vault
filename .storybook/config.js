@@ -2,6 +2,8 @@ import { addDecorator, configure } from "@storybook/react";
 import { themes } from "@storybook/components";
 import { withOptions } from "@storybook/addon-options";
 
+import "../packages/styles/index.scss";
+
 addDecorator(
   withOptions({
     theme: themes.dark
@@ -9,7 +11,11 @@ addDecorator(
 );
 
 function loadStories() {
+  // Atoms
   require("../packages/component-logo/stories");
+  require("../packages/component-icon/stories");
+  //Molecules
+  require("../packages/component-navigation/stories");
 }
 
 configure(loadStories, module);
